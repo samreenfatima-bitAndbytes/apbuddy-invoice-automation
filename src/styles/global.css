@@ -1499,6 +1499,41 @@ tr:last-child td {
   background: #fff;
 }
 
+.password-field {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.password-field input {
+  width: 100%;
+  padding-right: 2.75rem;
+}
+.password-field__toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.4rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.password-field__toggle:hover {
+  color: var(--brand);
+  background: rgba(11, 110, 79, 0.1);
+}
+.password-field__toggle:focus-visible {
+  outline: 2px solid rgba(11, 110, 79, 0.35);
+  outline-offset: 1px;
+}
+
 .demo-chips {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { BrandLogoFull, BrandMark } from "../components/BrandLogo";
+import PasswordField from "../components/PasswordField";
 import { DEMO_USERS } from "../data/demo";
 import { useAuth } from "../hooks/useAuth";
 
@@ -120,9 +121,8 @@ export default function Login() {
           </div>
           <div className="field">
             <label htmlFor="password">Password</label>
-            <input
+            <PasswordField
               id="password"
-              type="password"
               autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
